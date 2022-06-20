@@ -10,7 +10,28 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        Image(/*@START_MENU_TOKEN@*/"Image Name"/*@END_MENU_TOKEN@*/)
+        VStack() {
+            
+            Spacer()
+                        
+            Image("logo")
+                .resizable()
+                .aspectRatio(contentMode:
+                        .fit)
+            
+            Spacer()
+            
+            HStack() {
+                
+                Spacer()
+                Text("Hello!")
+                Spacer()
+                Text("World!")
+                Spacer()
+            }
+            
+            Spacer()
+        }
 
     }
 }
